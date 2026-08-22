@@ -129,11 +129,11 @@ Here is the step-by-step outline of the repository and the sub-topics:
 
 ## How to Get Started
 
-Each subfolder contains pre-generated `.cpp` files named after the problems in that section, complete with metadata comments (links to Video, Article) and a clean C++ template.
+Each subfolder contains pre-generated `.cpp` files named after the problems in that section, complete with metadata comments (links to Video, Article) at the top of the file so you can write your own C++ logic.
 
 1. Navigate to the step folder and subfolder of your choice.
 2. Open the `.cpp` file matching the problem you want to solve.
-3. Write your solution in the `Solution::solve()` function.
+3. Write your solution from scratch.
 
 ### How to Compile & Run locally (macOS/Linux)
 
@@ -146,9 +146,3 @@ clang++ -std=c++17 -O2 -Wall solution.cpp -o solution
 # Run
 ./solution
 ```
-
-### Local Input/Output Redirection (Optional)
-If you want to use files for input/output instead of typing in the console every time, the template is pre-configured to look for `input.txt` and `output.txt` in the execution directory.
-1. Create `input.txt` and `output.txt` in the same directory as your source file.
-2. Put the test input inside `input.txt`.
-3. When you run `./solution`, the output will be automatically written to `output.txt`.
